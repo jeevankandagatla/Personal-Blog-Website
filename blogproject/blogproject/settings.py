@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c0zb1iade&k&wax8zuaqjo!j0qsz&s%pifhx_s)2@r_6w7u!lc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['the-scroll-2.onrender.com', 'localhost']
 
 
 # Application definition
