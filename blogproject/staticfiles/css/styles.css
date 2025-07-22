@@ -313,30 +313,9 @@ body {
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.1;
-}
-.hero .hero-title {
-    color: #000033;
+  color: #000033;
 }
 
-.hero .hero-subtitle {
-    color: #000033;
-}
-
-.hero .hero-buttons .btn {
-    color: #000033;
-}
-
-.hero .hero-stats .stat-number {
-    color: #000033;
-}
-
-.hero .hero-stats .stat-label {
-    color: #000033;
-}
-
-.hero .hero-badge span {
-    color: #000033;
-}
 .hero-subtitle {
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -345,6 +324,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
+  color: #000033;
 }
 
 .hero-buttons {
@@ -353,6 +333,7 @@ body {
   gap: 1rem;
   align-items: center;
   margin-bottom: 4rem;
+  color: #000033;
 }
 
 .hero-stats {
@@ -362,16 +343,19 @@ body {
   margin-top: 4rem;
   padding-top: 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #000033;
 }
 
 .stat {
   text-align: center;
+  color: #000033;
 }
 
 .stat-number {
   font-size: 1.875rem;
   font-weight: 700;
   display: block;
+  color: #000033;
 }
 
 .stat-label {

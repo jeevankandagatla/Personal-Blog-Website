@@ -4,29 +4,29 @@ from django.http import HttpResponse
 from .models import Post
 from .forms import PostForm, SignUpForm, LoginForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 def signup(request):
     if request.method == 'POST':
-        form = SignUpForm(request.POST)
+        form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('index')  # Redirect to index after signup
+            return redirect('index')
     else:
-        form = SignUpForm()
+        form = UserCreationForm()
     return render(request, 'blog/signup.html', {'form': form})
 
 def login_view(request):
     if request.method == 'POST':
-        form = LoginForm(request, data=request.POST)
+        form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('index')  # Redirect to index after login
+            return redirect('index')
     else:
-        form = LoginForm()
+        form = AuthenticationForm()
     return render(request, 'blog/login.html', {'form': form})
-
 
 # Create your views here.
 def post_list(request):
