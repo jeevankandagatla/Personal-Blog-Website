@@ -39,7 +39,7 @@
                 <!-- Desktop Auth Buttons -->
                 <div class="auth-buttons">
                     {% if user.is_authenticated %}
-                        <span>Welcome, {{ user.username }}!</span>
+                        <span style="color: var(--muted-foreground);">Welcome, {{ user.username }}!</span>
                         <a href="{% url 'logout' %}" class="btn btn-ghost">Log Out</a>
                     {% else %}
                         <a href="{% url 'login' %}" class="btn btn-ghost">Log In</a>
@@ -67,7 +67,7 @@
                         
                         <div class="mobile-auth auth-buttons">
                             {% if user.is_authenticated %}
-                                <span>Welcome, {{ user.username }}!</span>
+                                <span style="color: var(--muted-foreground);">Welcome, {{ user.username }}!</span>
                                 <a href="{% url 'logout' %}" class="btn btn-ghost">Log Out</a>
                             {% else %}
                                 <a href="{% url 'login' %}" class="btn btn-ghost">Log In</a>
